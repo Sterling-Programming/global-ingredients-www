@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <Title>Global Ingredients</Title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <script src="js/tota11y.min.js"></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <img class='whitesvg page-header-item' src="img/main-logo.svg" alt="Main logo">
+        <nav class="page-header-item">
+            <ul role="menubar" class="nav-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="nav-list-item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="nav-list-item nav-list-item-active">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="centered">Contact Us</h1>
+        <div class="centered">
+            <p>
+                Any questions about our available products? Please feel free to contact us and we'll get back to you as soon as we can.
+            </p>
+            <p>
+                <a href="mailto:testemail@gmail.com">Send us an email (email needs updated)</a>
+            </p>
+            <p>Or fill out this handy form, and we'll be sure to get back to you.</p>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form" name="portfolio-contact-form" method="POST" data-netlify="true"
+                data-netlify-recaptcha="true" netlify-honeypot="hidden-field">
+                <label class="contact-form-field" for="contact-email">* Email:</label>
+                <input class="contact-form-field" id="contact-email" type="email" name="email_address" required>
+
+                <label class="contact-form-field" for="contact-phone">Phone:</label>
+                <input class="contact-form-field" id="contact-phone" type="tel" name="contact_phone">
+                <input class="hidden-field" type="checkbox" name="hidden-field" contents="This field is for robots.">
+
+                <label class="contact-form-field" for="contact-message">* Message (max. 240 characters):</label>
+                <textarea class="contact-form-field" id="contact-message" name="message" maxlength="240"
+                    placeholder="Enter your message" required></textarea>
+
+                <div data-netlify-recaptcha="true"></div>
+
+                <input class="button button-submit contact-form-field " type="submit" value="Send Message">
+            </form>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media-footer">
+            <a href="https://github.com/bentleyjensen" target="_blank">
+                <img alt="github logo" src="img/github-logo.svg" class="whitesvg" />
+            </a>
+            <a href="https://twitter.com/bentleyjensen" target="_blank">
+                <img alt="twitter logo" src="img/twitter-logo.svg" class="whitesvg" />
+            </a>
+            <a href="https://www.linkedin.com/in/bentleyjensen/" target="_blank">
+                <img alt="linkedin logo" src="img/linkedin-logo.svg" />
+            </a>
+            <a href="https://medium.com/@bentleyjensen" target="_blank">
+                <img alt="medium.com logo" src="img/medium-logo.svg" class="whitesvg" />
+            </a>
+            <a href="https://dev.to/bentleyjensen" target="_blank">
+                <img alt="DEV Community logo" src="img/devto-logo.svg" class="whitesvg" />
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
